@@ -4,12 +4,14 @@ import { DebounceInput } from "react-debounce-input";
 import { AiOutlineSearch } from "react-icons/ai";
 
 export const Container = styled.div`
-  min-width: 350px;
+  left: 0;
   max-width: 563px;
   width: 100%;
   position: relative;
   z-index: 2;
   margin: ${(props) => (props.mobile ? "10px 10px" : "0")};
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const SearchBar = styled(DebounceInput)`
@@ -97,5 +99,12 @@ export const Link = styled(RRLink)`
     color: #515151;
     font-size: 19px;
     font-family: "Lato", sans-serif;
+  }
+
+  span {
+    display: inline-block;
+    margin-left: 5px;
+    color: #515151;
+    opacity: 40%;
   }
 `;
